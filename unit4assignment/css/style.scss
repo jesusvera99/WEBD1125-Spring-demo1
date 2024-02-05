@@ -54,14 +54,73 @@
   }
   div#maincontent {
     height: calc(100vh - 240px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .slogan {
+
+      margin-left: 50px;
+
+      h1 {
+        font-size: 5em;
+        color: rgb(129,113,6);
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 100px;
+        
+      }
+
+      #square {
+        background-color: #fff;
+        width: 500px;
+        height: 500px;
+      }
+    }
+
+    .technology {
+      margin-right: 50px;
+
+      #synopsis {
+        width: 800px;
+        height: 100px;
+        background-color: #fff;
+
+        h3 {
+          color: rgb(129,113,6);
+          margin: 5px 20px 0px 20px;
+        }
+        p {
+          color: #000;
+          margin: 5px 20px 5px 20px;
+        }
+      }
+
+    }
   }
+
   footer {
     height: 120px;
     background-color: rgb(54, 40, 129);
-    display: flex;
+    display: flex; 
     section {
         width: 50%;
 
+    }
+    section#footerweb {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(129,113,6);
+      font-size: 1.5em;
+      p {
+        margin-left: 50px;
+      }
+    }
+    section#address {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      font-size: 1.5em;
+      p {
+        line-height: 1.5em;
+      }
     }
     section > section#social {
         position: relative;

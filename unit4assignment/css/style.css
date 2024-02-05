@@ -51,6 +51,39 @@
 }
 #container div#maincontent {
   height: calc(100vh - 240px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container div#maincontent .slogan {
+  margin-left: 50px;
+}
+#container div#maincontent .slogan h1 {
+  font-size: 5em;
+  color: rgb(129, 113, 6);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 100px;
+}
+#container div#maincontent .slogan #square {
+  background-color: #fff;
+  width: 500px;
+  height: 500px;
+}
+#container div#maincontent .technology {
+  margin-right: 50px;
+}
+#container div#maincontent .technology #synopsis {
+  width: 800px;
+  height: 100px;
+  background-color: #fff;
+}
+#container div#maincontent .technology #synopsis h3 {
+  color: rgb(129, 113, 6);
+  margin: 5px 20px 0px 20px;
+}
+#container div#maincontent .technology #synopsis p {
+  color: #000;
+  margin: 5px 20px 5px 20px;
 }
 #container footer {
   height: 120px;
@@ -59,6 +92,22 @@
 }
 #container footer section {
   width: 50%;
+}
+#container footer section#footerweb {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(129, 113, 6);
+  font-size: 1.5em;
+}
+#container footer section#footerweb p {
+  margin-left: 50px;
+}
+#container footer section#address {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+}
+#container footer section#address p {
+  line-height: 1.5em;
 }
 #container footer section > section#social {
   position: relative;
