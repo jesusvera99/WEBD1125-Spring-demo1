@@ -51,26 +51,78 @@
 }
 #container div#maincontent {
   height: calc(100vh - 240px);
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 #container div#maincontent .slogan {
-  margin-left: 50px;
+  margin-top: 100px;
+  margin-left: 100px;
 }
 #container div#maincontent .slogan h1 {
-  font-size: 5em;
+  font-size: 6em;
+  font-weight: lighter;
   color: rgb(129, 113, 6);
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 100px;
+  padding-left: 40px;
+  position: relative;
+  z-index: 3;
+  line-height: 1em;
 }
 #container div#maincontent .slogan #square {
   background-color: #fff;
-  width: 500px;
+  width: 400px;
+  height: 400px;
+  transform: translate(0px, -547px);
+  position: relative;
+  z-index: 2;
+}
+#container div#maincontent .slogan #grayrect {
+  width: 300px;
+  height: 40px;
+  background-color: rgb(101, 101, 101);
+  transform: translate(0px, -850px);
+  position: relative;
+  z-index: 3;
+}
+#container div#maincontent .slogan #brownrect {
+  width: 300px;
+  height: 40px;
+  background-color: rgb(56, 51, 16);
+  transform: translate(100px, -700px);
+  position: relative;
+  z-index: 3;
+}
+#container div#maincontent .slogan #purplecircle {
   height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: rgb(54, 40, 129);
+  transform: translate(100px, -950px);
+  position: relative;
+  z-index: 1;
+}
+#container div#maincontent .slogan #orangecircle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: rgb(129, 113, 6);
+  transform: translate(850px, -1700px);
+  position: relative;
+  z-index: 1;
 }
 #container div#maincontent .technology {
   margin-right: 50px;
+  z-index: 2;
+}
+#container div#maincontent .technology #tophr {
+  width: 75%;
+  transform: translate(200px, -25px);
 }
 #container div#maincontent .technology #synopsis {
   width: 800px;
@@ -84,6 +136,10 @@
 #container div#maincontent .technology #synopsis p {
   color: #000;
   margin: 5px 20px 5px 20px;
+}
+#container #bottomhr {
+  width: 95%;
+  transform: translate(49px, -20px);
 }
 #container footer {
   height: 120px;
@@ -114,6 +170,7 @@
   left: 8em;
   top: 1em;
   margin-left: auto;
+  margin-right: 50px;
 }
 
 /*

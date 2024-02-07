@@ -3,6 +3,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  // overflow-x: hidden;
+  // overflow-y: hidden;
 }
 @font-face {
   font-family: pirulen;
@@ -54,31 +56,91 @@
   }
   div#maincontent {
     height: calc(100vh - 240px);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+
 
     .slogan {
-
-      margin-left: 50px;
+      // flex: 50%;
+      margin-top: 100px;
+      margin-left: 100px;
 
       h1 {
-        font-size: 5em;
+        font-size: 6em;
+        font-weight: lighter;
         color: rgb(129,113,6);
         font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 100px;
+        padding-left: 40px;
+        position: relative;
+        z-index: 3;
+        line-height: 1em;
         
       }
 
       #square {
         background-color: #fff;
-        width: 500px;
+        width: 400px;
+        height: 400px;
+        transform: translate(0px, -547px);
+        position: relative;
+        z-index: 2;
+      }
+      #grayrect {
+        width: 300px;
+        height: 40px;
+        background-color: rgb(101, 101, 101);
+        transform: translate(0px, -850px);
+        position: relative;
+        z-index: 3;
+      }
+      #brownrect {
+        width: 300px;
+        height: 40px;
+        background-color: rgb(56, 51, 16) ;
+        transform: translate(100px, -700px);
+        position: relative;
+        z-index: 3;
+      }
+      #purplecircle {
         height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        background-color: rgb(54, 40, 129); 
+        transform: translate(100px, -950px);
+        position: relative;
+        z-index: 1;
+
+      }
+      #orangecircle {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: rgb(129,113,6); 
+        transform: translate(850px, -1700px);
+        position: relative;
+        z-index: 1;
+  
       }
     }
 
     .technology {
+      // flex: 50%;
       margin-right: 50px;
+      z-index: 2;
+
+      #tophr {
+        // margin-bottom: 10px;
+        width: 75%;
+        // margin-left: 25%;
+        transform: translate(200px, -25px);
+
+      }
 
       #synopsis {
         width: 800px;
@@ -97,6 +159,13 @@
 
     }
   }
+  #bottomhr {
+    width: 95%;
+    // margin-bottom: 50px;
+    // margin-left: 75px;
+    transform: translate(49px, -20px);
+  }
+  
 
   footer {
     height: 120px;
@@ -127,6 +196,7 @@
         left: 8em;
         top: 1em;
         margin-left: auto;
+        margin-right: 50px;
     }
   }
 }
