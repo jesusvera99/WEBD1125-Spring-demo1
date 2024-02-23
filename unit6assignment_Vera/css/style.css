@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  background-color: #9d9d9d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container h1#spacing {
+  text-transform: uppercase;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}/*# sourceMappingURL=style.css.map */
