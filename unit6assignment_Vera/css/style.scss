@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  background-color: #9d9d9d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  //Demonstrating use of Text Transform and Spacing rules
+  h1#spacing {
+    text-transform: lowercase;
+    line-height: 2em;
+    letter-spacing: 0.5em;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s;
+  }
+
+  h1#spacing:hover {
+    text-transform: uppercase;
+    letter-spacing: 1.2em;
+    font-size: 2.5em;
+    cursor: pointer;
+  }
+}
+
+#container2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #907eaf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  #backgrounds {
+    width: 50%;
+    height: 50%;
+    background-image: url(../penguin.jpg), url(../icemountains.jpg);
+    background-size: contain;
+    background-position: right bottom, left;
+    background-repeat: no-repeat, repeat;
+  }
+}
+
+#container3 {
+  width: 100%;
+  height: 100vh;
+  background-color: #aeece0;
+  background-image: linear-gradient(180deg, #aeece0 0%, #818fcf 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  #opacity {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: auto;
+    background-color: #fff;
+
+    img {
+      opacity: 0.1;
+      transition: 0.5s;
+    }
+    img:hover {
+      opacity: 1;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+  }
+}
+#container4 {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffe0a6;
+  background-image: linear-gradient(
+    180deg,
+    #ffe0a6 0%,
+    #6284ff 50%,
+    #261a1a 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    padding-top: 50px;
+    transition: 0.7s;
+    // color: #fff;
+    // font-size: 3em;
+    // text-shadow: 8px 8px 10px #000000;
+  }
+  h1:hover {
+    transition: 0.7s;
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 8px 8px 10px #000000;
+    cursor: pointer;
+  }
+
+  #images {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    #mars {
+      box-shadow: -10px 10px 5px black;
+    }
+
+    #sun:hover {
+      // box-shadow: 0 0 10px #000;
+      box-shadow: 0 0 200px #000;
+      cursor: pointer;
+    }
+
+    #earth {
+      box-shadow: 10px 10px 5px black;
+    }
+    img {
+      margin: 0px 40px;
+    }
+  }
+}
+
+// //Fonts to be used
+// ANTA
+// .anta-regular {
+//     font-family: "Anta", sans-serif;
+//     font-weight: 400;
+//     font-style: normal;
+//   }
