@@ -13,7 +13,9 @@ body {
 #container {
   width: 100%;
   height: 100vh;
-  background-color: #9d9d9d;
+  background-color: #e2e2e2;
+background-image: linear-gradient(180deg, #e2e2e2 0%, #5a5a5a 100%);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +85,12 @@ body {
       transition: 0.5s;
       cursor: pointer;
     }
+    figcaption {
+      background-color: #000;
+      color: white;
+      font-style: italic;
+      text-align: center;
+    }
   }
 }
 #container4 {
@@ -139,6 +147,60 @@ body {
     img {
       margin: 0px 40px;
     }
+  }
+}
+
+#container5 {
+  width: 100%;
+  height: 100vh;
+  background-color: #e82239;
+  background-image: linear-gradient(
+    180deg,
+    #e82239 0%,
+    #6284ff 50%,
+    #ffffff 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 3em;
+  }
+
+  #sprites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    height: 50%;
+
+    #canada {
+      width: 266px;
+      height: 143px;
+      background: url(../images/sprite.webp) 0 -144px;
+      transition: 0.5s;
+    }
+    #canada:hover {
+      background: url(../images/sprite.webp) 0 0;
+      cursor: pointer;
+      transition: 0.5s;
+
+    }
+    #mexico {
+      width: 266px;
+      height: 143px;
+      background: url(../images/sprite.webp) 0 -144px;
+      transition: 0.5s;
+    }
+    #mexico:hover {
+      background: url(../images/sprite.webp) 0 -288px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
   }
 }
 
