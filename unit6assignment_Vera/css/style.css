@@ -31,6 +31,7 @@ body {
 #container h1#spacing:hover {
   text-transform: uppercase;
   letter-spacing: 1.2em;
+  font-size: 2.5em;
   cursor: pointer;
 }
 
@@ -91,6 +92,14 @@ body {
 }
 #container4 h1 {
   padding-top: 50px;
+  transition: 0.7s;
+}
+#container4 h1:hover {
+  transition: 0.7s;
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 8px 8px 10px #000000;
+  cursor: pointer;
 }
 #container4 #images {
   width: 100%;
@@ -100,9 +109,16 @@ body {
   align-items: center;
   flex-direction: row;
 }
-#container4 #images img {
-  padding: 0px 40px;
+#container4 #images #mars {
+  box-shadow: -10px 10px 5px black;
 }
-#container4 #images img #mars {
-  box-shadow: -10px;
+#container4 #images #sun:hover {
+  box-shadow: 0 0 200px #000;
+  cursor: pointer;
+}
+#container4 #images #earth {
+  box-shadow: 10px 10px 5px black;
+}
+#container4 #images img {
+  margin: 0px 40px;
 }/*# sourceMappingURL=style.css.map */
