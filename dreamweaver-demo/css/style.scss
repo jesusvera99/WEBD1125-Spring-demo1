@@ -1,0 +1,25 @@
+// Scss Document
+* {
+	padding: 0;
+	margin: 0;
+	border: box-sizing;
+}
+
+body {
+	background-color: aquamarine;
+		
+		#container {
+			width: 100vw;
+			height: 100vh;
+			display: grid;
+			grid-template-columns: repeat(5,1fr);
+			
+			img {
+			width: 100%;
+			height: auto;
+				
+			}
+			
+			
+		}
+}
