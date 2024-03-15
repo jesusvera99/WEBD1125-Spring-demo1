@@ -1,0 +1,100 @@
+.madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #aa4444;
+  font-family: Madimi One, sans-serif;
+
+  .hor__nav {
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0 0 10px #000;
+    background-color: #fff;
+    .hor__navlist {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 2rem;
+      margin: 0 2rem;
+
+      //   &logo {
+      //     list-style: none;
+      //     margin-right: auto;
+      //     cursor: pointer;
+      //     svg {
+      //       width: 2rem;
+      //       height: auto;
+      //       transition: fill 150ms ease-in;
+      //       &:hover,
+      //       &:focus {
+      //         fill: gainsboro;
+      //       }
+      //     }
+      //   }
+      .nav__listitem {
+        list-style: none;
+        font-weight: bold;
+        position: relative;
+        padding: 1.5rem 1rem;
+        cursor: pointer;
+        &::after {
+          content: "";
+          width: 0;
+          height: 0.15rem;
+          border-radius: 0.2em;
+          position: absolute;
+          left: 1rem;
+          bottom: 0.8rem;
+          background-color: #aa4444;
+          transition: width 200ms ease-in;
+        }
+        &:hover::after,
+        &:focus::after {
+          width: 80%;
+        }
+        &:hover ul,
+        &:focus ul {
+          opacity: 1;
+          visibility: visible;
+        }
+        .nav__listitemdrop {
+          position: absolute;
+          top: 4rem;
+          left: -1rem;
+          box-shadow: 0 0 10px gainsboro;
+          background-color: #fff;
+          border-radius: 0.2em;
+          width: 12rem;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 200ms ease-in-out;
+          li {
+            list-style: none;
+            padding: 0.5rem;
+            border-radius: 0.2em;
+            transition: background-color 200ms ease-in-out;
+            &:hover,
+            &:focus {
+              background-color: #aa4444;
+            }
+          }
+        }
+      }
+    }
+  }
+}
